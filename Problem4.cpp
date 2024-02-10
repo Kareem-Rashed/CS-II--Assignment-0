@@ -76,7 +76,7 @@ bool isValid(string s)
         stack.pop();
 
         if (!(_isOpposite(pop1, s[i]))&&(!(_isOpposite(pop1, pop2)))){
-            cout<<pop1<<" is not the opposite of "<<s[i]<<" neither the opposite of "<<pop2<<endl;
+
             return false;
 
         }
@@ -96,10 +96,9 @@ bool isValid(string s)
 int main(){
     
 
-    cout<<isValid("()[]{}")<<endl;
+    cout<<isValid("({[]})")<<endl;
     
     
     return 0;
     
 }
-
